@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1 highlight>
+    {{ title }}
+  </h1>
+</div>
+<div style="text-align:center">
+  <app-child [binddata]= data></app-child>
+  <h2 [innerText] = "test"></h2>
+</div>
+  <div style="text-align:center">
+  <button [style.color] = "color" [style.padding]="width" (click) = "buttoncheck()">event</button>
+  <br/>
+  <br/>
+</div>
+<div style="text-align:center">
+ <input type="text" [(ngModel)]="bind" />
+  <p>{{bind}}</p>
+</div>
+<div style="text-align:center">
+  <h2 [innerText]="data2.title"></h2>
+</div>
+
+
